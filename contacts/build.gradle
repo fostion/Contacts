@@ -25,7 +25,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
         versionName VERSION_NAME
@@ -88,9 +88,6 @@ artifacts {
 }
 
 bintray {
-    user = BINTRAY_USER
-    key = BINTRAY_API_KEY
-
     configurations = ['archives']
     pkg {
         repo = 'maven'
